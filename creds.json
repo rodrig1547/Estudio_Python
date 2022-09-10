@@ -1,0 +1,41 @@
+{
+	"Truck":
+	{
+		"LB_PROD": 
+		{
+			"url" : "https://timineaware-lb.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"payload": {},
+			"headers": 
+			{
+				"x-api-key": "83fc13c9-8c65-4773-8000-675f72c579cf"
+			}
+		},
+		"PETROSEA_SMD_PROD":
+		{
+			"urL" : "https://fd-jarvis-server-prod-smd-001.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"payload" :{},
+			"headers" : 
+				{
+					"x-api-key": "5d44a162-a143-11ec-b909-0242ac120002"
+				}	
+		},
+		"PETROSEA_SMB_PROD":
+			{
+			"url" : "https://fd-jarvis-server-prod-smb-001.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"payload" : {},
+			"headers" : 
+				{
+					"x-api-key": "57f2bafa-a143-11ec-b909-0242ac120002"
+				}
+			},
+		"MLP_PROD": 
+			{
+			"url" : "https://timiningaware-mlp.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"payload" : {},
+			"headers" : 
+				{
+					"x-api-key": "077b7c6b-4fa4-4ded-89f0-f9ce72cfef35"
+				}
+			}
+	}				
+}
