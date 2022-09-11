@@ -1,9 +1,8 @@
 {
-	"Truck":
-	{
 		"LB_PROD": 
 		{
-			"url" : "https://timineaware-lb.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"url_Trucks" : "https://timineaware-lb.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"url_Shovels" : "https://timineaware-lb.azurefd.net/assets/remote-document/query/raw_shovels_shovels",
 			"payload": {},
 			"headers": 
 			{
@@ -12,7 +11,8 @@
 		},
 		"PETROSEA_SMD_PROD":
 		{
-			"urL" : "https://fd-jarvis-server-prod-smd-001.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"url_Trucks" : "https://fd-jarvis-server-prod-smd-001.azurefd.net/assets/remote-document/query/raw_trucks_trucks",
+			"url_Shovels": "https://fd-jarvis-server-prod-smd-001.azurefd.net/assets/remote-document/query/raw_shovels_shovels",
 			"payload" :{},
 			"headers" : 
 				{
@@ -21,7 +21,8 @@
 		},
 		"PETROSEA_SMB_PROD":
 			{
-			"url" : "https://fd-jarvis-server-prod-smb-001.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"url_Trucks" : "https://fd-jarvis-server-prod-smb-001.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"url_Shovels" : "https://fd-jarvis-server-prod-smb-001.azurefd.net//assets/remote-document/query/raw_shovels_shovels",
 			"payload" : {},
 			"headers" : 
 				{
@@ -30,12 +31,12 @@
 			},
 		"MLP_PROD": 
 			{
-			"url" : "https://timiningaware-mlp.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"url_Trucks" : "https://timiningaware-mlp.azurefd.net//assets/remote-document/query/raw_trucks_trucks",
+			"url_Shovels" : "https://timiningaware-mlp.azurefd.net//assets/remote-document/query/raw_shovels_shovels",
 			"payload" : {},
 			"headers" : 
 				{
 					"x-api-key": "077b7c6b-4fa4-4ded-89f0-f9ce72cfef35"
 				}
-			}
-	}				
+			}			
 }
