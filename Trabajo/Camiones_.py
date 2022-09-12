@@ -3,7 +3,7 @@ import json
 import pandas as pd
 from datetime import datetime
 
-file = open('creds.json')
+file = open('Trabajo\creds.json')
 creds = json.load(file)
 file.close()
 df = pd.read_csv("prueba2.csv")
@@ -65,6 +65,14 @@ def Shovels_Info(get_Shovels_Info_raw, faena):
     df = pd.DataFrame.from_records(Lista)     
     df.to_csv('Shovels_Status.csv', index = False, mode = 'a', header= False)
     return  True
+
+def System_status(get_System_status,faena):
+    Lista = []
+    for x in get_System_status:
+        Dict = {}
+        Dict['Hora_Consulta'] = date
+        Dict['Ultima_Actualizacion'] = x['_lastUpdated']
+        Dict['Topografia'] = datetime.strptime(x['_lastUpdatedByType']['_updatedOn'], "%Y-%m-%dT%H:%M:%SZ") - timedelta(hours = 3)
         
     
 
@@ -83,8 +91,8 @@ def main():
     Faenas = ["LB_PROD","PETROSEA_SMD_PROD", "PETROSEA_SMB_PROD", "MLP_PROD"]
     a =[Trucks_Info(get(i, 'Trucks'), i ) for i in Faenas]    
     pd.DataFrame.from_records(a).to_csv('Estado_Camiones.csv', header= False, mode= 'a', index = False)
-    #b = [Shovels_Info(get(i,'Shovels' ),i) for i in Faenas] 
-    #print (b)
+    b = [Shovels_Info(get(i,'Shovels' ),i) for i in Faenas] 
+    print (b)
 
 if __name__ == '__main__':
     main()
